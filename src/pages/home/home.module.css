@@ -1,0 +1,21 @@
+.title{
+    margin-top: 24px;
+    font-size: 94px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    gap: 16px;
+    max-width: 80%;
+    margin: 48px auto;
+    flex-wrap: wrap;
+}
+
+.container > a{
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: rgb(230, 225, 228);
+    font-size: larger;
+}

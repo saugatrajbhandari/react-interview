@@ -1,0 +1,32 @@
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 48px;
+  }
+  
+  .stopwatchTimer{
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 8px;
+    text-align: center;
+  }
+  
+  .action{
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+  }
+  
+  .action > button{
+    padding: 4px 6px;
+    cursor:pointer
+  }
