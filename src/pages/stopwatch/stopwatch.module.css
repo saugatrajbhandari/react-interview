@@ -30,3 +30,13 @@
     padding: 4px 6px;
     cursor:pointer
   }
+
+  .dialogcontainer {
+    width: 70vw;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
+  }
+

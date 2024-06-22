@@ -37,10 +37,32 @@ const Stopwatch = () => {
   const minutes = Math.floor((time / 60) % 60);
   const hours = Math.floor(time / 3600);
 
+  const dialog = document.getElementById("stopwatch-dialog");
+
+  const handleOpenDialog = () => {
+    dialog.showModal();
+  };
+
+  const handleCloseDialog = () => {
+    dialog.close();
+  };
+
   return (
     <div className={style.main}>
       <div>
         <p className={style.title}>Stopwatch</p>
+        <p onClick={handleOpenDialog} style={{ cursor: "pointer" }}>
+          reference
+        </p>
+        <dialog id="stopwatch-dialog">
+          <div className={style.dialogcontainer}>
+            <p style={{ cursor: "pointer" }} onClick={handleCloseDialog}>
+              close
+            </p>
+
+            <img src="/stopwatch.png" alt="stopwatch" />
+          </div>
+        </dialog>
 
         <p className={style.stopwatchTimer}>
           {String(hours).padStart(2, "0")} : {String(minutes).padStart(2, "0")}{" "}
