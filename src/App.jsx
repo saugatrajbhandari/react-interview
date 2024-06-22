@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/home";
 import Stopwatch from "./pages/stopwatch";
 import Layout from "./layout";
+import ClickOutside from "./pages/click-outside";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,11 @@ const router = createBrowserRouter([
       {
         path: "/stopwatch",
         element: <Stopwatch />,
+      },
+
+      {
+        path: "/clickoutside",
+        element: <ClickOutside />,
       },
     ],
   },

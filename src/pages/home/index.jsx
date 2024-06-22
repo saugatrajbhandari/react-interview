@@ -8,6 +8,7 @@ function Home() {
 
       <div className={style.container}>
         <Link to="/stopwatch">stopwatch</Link>
+        <Link to="/clickoutside">clickoutside</Link>
       </div>
     </div>
   );
