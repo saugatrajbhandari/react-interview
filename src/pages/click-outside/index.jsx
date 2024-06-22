@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react";
 import style from "./click-outside.module.css";
+// import useClickOutside from "../../hooks/use-click-outside";
 
 function ClickOutside() {
-  const containerRef = useRef(null);
-
   const callback = () => alert("mouseclick outside");
+
+  const containerRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (e) => {
@@ -13,10 +14,10 @@ function ClickOutside() {
       }
     };
 
-    window.addEventListener("click", handleClickOutside);
+    window.addEventListener("mousedown", handleClickOutside);
 
-    return () => window.removeEventListener("click", handleClickOutside);
-  }, []);
+    return () => window.removeEventListener("mousedown", handleClickOutside);
+  }, [containerRef]);
 
   return (
     <div className={style.main}>
