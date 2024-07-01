@@ -1,0 +1,19 @@
+.main{
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:40px
+  }
+
+.title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+.subtitle{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}

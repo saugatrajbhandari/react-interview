@@ -11,6 +11,9 @@ function Home() {
         <Link to="/clickoutside" state={{ isInitial: true }}>
           clickoutside
         </Link>
+
+        <Link to="/perform-action">perform action</Link>
+        <Link to="/multistepform">mutistep form</Link>
       </div>
     </div>
   );
