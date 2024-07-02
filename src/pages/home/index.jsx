@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import style from "./home.module.css";
+import { navigation } from "../../navigation";
 
 function Home() {
   return (
@@ -7,13 +8,11 @@ function Home() {
       <h1 className={style.title}>React Interview</h1>
 
       <div className={style.container}>
-        <Link to="/stopwatch">stopwatch</Link>
-        <Link to="/clickoutside" state={{ isInitial: true }}>
-          clickoutside
-        </Link>
-
-        <Link to="/perform-action">perform action</Link>
-        <Link to="/multistepform">mutistep form</Link>
+        {navigation.map((item) => (
+          <Link key={item.path} to={item.path}>
+            {item.name}
+          </Link>
+        ))}
       </div>
     </div>
   );
