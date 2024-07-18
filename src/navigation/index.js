@@ -4,4 +4,5 @@ export const navigation = [
   { path: "/perform-action", name: "perform action" },
   { path: "/multistepform", name: "multistep form" },
   { path: "/jira-clone", name: "jira clone" },
+  { path: "/infinite-scrolling", name: "infinite scrolling" },
 ];

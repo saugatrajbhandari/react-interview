@@ -8,7 +8,6 @@ function ActionTimeout() {
   const timerIntervalRef = useRef(null);
 
   useEffect(() => {
-    console.log(time);
     if (time === 11) {
       clearInterval(timerIntervalRef.current);
       setTime(0);

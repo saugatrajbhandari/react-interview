@@ -1,6 +1,7 @@
 import ActionTimeout from "../pages/action-timeout";
 import ClickOutside from "../pages/click-outside";
 import Home from "../pages/home";
+import InfiniteScrolling from "../pages/infinite-scrolling";
 import JiraClone from "../pages/jira-clone";
 import Multistepform from "../pages/multistep-form";
 import Stopwatch from "../pages/stopwatch";
@@ -31,4 +32,5 @@ export const routes = [
     element: <Multistepform />,
   },
   { path: "/jira-clone", element: <JiraClone /> },
+  { path: "/infinite-scrolling", element: <InfiniteScrolling /> },
 ];
