@@ -5,4 +5,5 @@ export const navigation = [
   { path: "/multistepform", name: "multistep form" },
   { path: "/jira-clone", name: "jira clone" },
   { path: "/infinite-scrolling", name: "infinite scrolling" },
+  { path: "/admin-sidebar-toggle", name: "admin sidebar toggle" },
 ];
