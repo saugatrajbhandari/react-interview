@@ -1,6 +1,7 @@
 import ActionTimeout from "../pages/action-timeout";
 import AdminSidebarToggle from "../pages/admin-sidebar-toggle";
 import ClickOutside from "../pages/click-outside";
+import CustomMemo from "../pages/custom-memo";
 import Home from "../pages/home";
 import InfiniteScrolling from "../pages/infinite-scrolling";
 import JiraClone from "../pages/jira-clone";
@@ -35,4 +36,5 @@ export const routes = [
   { path: "/jira-clone", element: <JiraClone /> },
   { path: "/infinite-scrolling", element: <InfiniteScrolling /> },
   { path: "/admin-sidebar-toggle", element: <AdminSidebarToggle /> },
+  { path: "/custom-memo", element: <CustomMemo /> },
 ];
