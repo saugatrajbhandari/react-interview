@@ -104,6 +104,39 @@ function Option({ icon, title, selected, setSelected, open }) {
   );
 }
 
+const navigation = [
+  { name: "To do", value: "todo" },
+  { name: "Ongoing", value: "ongoing" },
+  { name: "Completed", value: "completed" },
+];
+
+function LayoutId() {
+  const [selectedTab, setSelectedTab] = useState("todo");
+
+  return (
+    <div className="mt-4 flex h-fit">
+      {navigation.map((item) => (
+        <div
+          onClick={() => setSelectedTab(item.value)}
+          className={cn(
+            "font-semibold relative text-lg  cursor-pointer transition-colors px-6 py-3"
+          )}
+          key={item.id}
+        >
+          {item.name}
+
+          {item.value === selectedTab && (
+            <motion.div
+              className=" absolute top-0 left-0 w-full h-full -z-10 rounded-full text-white  bg-indigo-300"
+              layoutId="underline"
+            />
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function AdminSidebarToggle() {
   const [isOpen, setIsOpen] = useState(true);
   const [selected, setSelected] = useState("Dashboard");
@@ -169,89 +202,93 @@ function AdminSidebarToggle() {
   //   );
 
   return (
-    <motion.nav
-      layout
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.124 }}
-      className={cn(
-        "bg-neutral-50 shrink-0  p-4 h-[calc(100vh-43px)] shadow-2xl flex flex-col justify-between w-fit",
-        { "!w-[200px]": isOpen }
-      )}
-    >
-      <div>
-        <div className="flex gap-2 items-center">
-          <Logo />
-          {isOpen && (
-            <motion.p
-              layout
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.125 }}
-              className=" font-semibold"
-            >
-              Apple
-            </motion.p>
-          )}
-        </div>
-
-        <div className="mt-8 flex flex-col gap-6">
-          <div className="flex gap-3 items-center">
-            <motion.div layout>
-              <Home size={28} />
-            </motion.div>
+    <div className="flex gap-4">
+      <motion.nav
+        layout
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.124 }}
+        className={cn(
+          "bg-neutral-50 shrink-0  p-4 h-[calc(100vh-43px)] shadow-2xl flex flex-col justify-between w-fit",
+          { "!w-[200px]": isOpen }
+        )}
+      >
+        <div>
+          <div className="flex gap-2 items-center">
+            <Logo />
             {isOpen && (
               <motion.p
+                layout
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.125 }}
-                layout
-                className="font-semibold text-lg"
+                className=" font-semibold"
               >
-                Home
+                Apple
               </motion.p>
             )}
           </div>
-        </div>
-      </div>
 
-      <div
-        onClick={() => setIsOpen((prevState) => !prevState)}
-        className="flex gap-2 items-center justify-center hover:bg-neutral-100 p-2 cursor-pointer"
-      >
-        {isOpen && (
-          <motion.p
-            layout
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="text-lg font-semibold"
-          >
-            Hide
-          </motion.p>
-        )}
-        {isOpen ? (
-          <motion.div
-            layout
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.125 }}
-          >
-            {" "}
-            <ChevronLeft size={28} />{" "}
-          </motion.div>
-        ) : (
-          <motion.div
-            layout
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.125 }}
-          >
-            <ChevronRight size={28} />
-          </motion.div>
-        )}
-      </div>
-    </motion.nav>
+          <div className="mt-8 flex flex-col gap-6">
+            <div className="flex gap-3 items-center">
+              <motion.div layout>
+                <Home size={28} />
+              </motion.div>
+              {isOpen && (
+                <motion.p
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.125 }}
+                  layout
+                  className="font-semibold text-lg"
+                >
+                  Home
+                </motion.p>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div
+          onClick={() => setIsOpen((prevState) => !prevState)}
+          className="flex gap-2 items-center justify-center hover:bg-neutral-100 p-2 cursor-pointer"
+        >
+          {isOpen && (
+            <motion.p
+              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="text-lg font-semibold"
+            >
+              Hide
+            </motion.p>
+          )}
+          {isOpen ? (
+            <motion.div
+              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.125 }}
+            >
+              {" "}
+              <ChevronLeft size={28} />{" "}
+            </motion.div>
+          ) : (
+            <motion.div
+              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.125 }}
+            >
+              <ChevronRight size={28} />
+            </motion.div>
+          )}
+        </div>
+      </motion.nav>
+
+      <LayoutId />
+    </div>
   );
 }
 
