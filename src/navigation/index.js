@@ -8,4 +8,5 @@ export const navigation = [
   { path: "/admin-sidebar-toggle", name: "admin sidebar toggle" },
   { path: "/custom-memo", name: "custom memo" },
   { path: "/fixed-footer", name: "fixed footer animation" },
+  { path: "/debounce", name: "debounce" },
 ];

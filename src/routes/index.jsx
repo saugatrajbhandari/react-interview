@@ -8,6 +8,7 @@ import InfiniteScrolling from "../pages/infinite-scrolling";
 import JiraClone from "../pages/jira-clone";
 import Multistepform from "../pages/multistep-form";
 import Stopwatch from "../pages/stopwatch";
+import Debounce from "../pages/debounce";
 
 export const routes = [
   {
@@ -39,4 +40,5 @@ export const routes = [
   { path: "/admin-sidebar-toggle", element: <AdminSidebarToggle /> },
   { path: "/custom-memo", element: <CustomMemo /> },
   { path: "/fixed-footer", element: <FixedFooterAnimation /> },
+  { path: "/debounce", element: <Debounce /> },
 ];
