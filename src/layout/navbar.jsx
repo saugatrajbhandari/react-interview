@@ -13,8 +13,6 @@ function Navbar() {
     navigate(e.target.value);
   };
 
-  console.log(pathname);
-
   return (
     <div className="p-2 items-center bg-indigo-400/70 flex justify-between">
       <Link to={"/"} className={style.layout}>

@@ -2,3 +2,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base{
+    button{
+        @apply border py-1 px-2;
+    }
+}
+
+@layer components{
+    .input{
+        @apply border px-2 py-1;
+    }
+}
