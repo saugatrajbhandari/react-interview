@@ -9,4 +9,5 @@ export const navigation = [
   { path: "/custom-memo", name: "custom memo" },
   { path: "/fixed-footer", name: "fixed footer animation" },
   { path: "/debounce", name: "debounce" },
+  { path: "/autocomplete", name: "autocomplete" },
 ];

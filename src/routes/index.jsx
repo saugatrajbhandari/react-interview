@@ -9,6 +9,7 @@ import JiraClone from "../pages/jira-clone";
 import Multistepform from "../pages/multistep-form";
 import Stopwatch from "../pages/stopwatch";
 import Debounce from "../pages/debounce";
+import Autocomplete from "../pages/autocomplete";
 
 export const routes = [
   {
@@ -41,4 +42,5 @@ export const routes = [
   { path: "/custom-memo", element: <CustomMemo /> },
   { path: "/fixed-footer", element: <FixedFooterAnimation /> },
   { path: "/debounce", element: <Debounce /> },
+  { path: "/autocomplete", element: <Autocomplete /> },
 ];

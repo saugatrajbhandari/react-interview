@@ -6,8 +6,6 @@ function Debounce() {
 
   const debounceValue = useDebounce(text, 1000);
 
-  console.log(debounceValue, "value");
-
   return (
     <div>
       <p className="text-center text-6xl font-bold mt-12">Debounce</p>
