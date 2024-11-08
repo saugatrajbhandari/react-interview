@@ -10,6 +10,7 @@ import Multistepform from "../pages/multistep-form";
 import Stopwatch from "../pages/stopwatch";
 import Debounce from "../pages/debounce";
 import Autocomplete from "../pages/autocomplete";
+import CursorMove from "../pages/cursor-move";
 
 export const routes = [
   {
@@ -43,4 +44,5 @@ export const routes = [
   { path: "/fixed-footer", element: <FixedFooterAnimation /> },
   { path: "/debounce", element: <Debounce /> },
   { path: "/autocomplete", element: <Autocomplete /> },
+  { path: "/cursor-move", element: <CursorMove /> },
 ];

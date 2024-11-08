@@ -20,12 +20,6 @@ function Autocomplete() {
   const debounceSearch = useDebounce(search, 1000);
 
   useEffect(() => {
-    console.log("ooo");
-
-    return () => console.log("booo");
-  }, []);
-
-  useEffect(() => {
     if (!debounceSearch) {
       setFilterData([]);
       return;

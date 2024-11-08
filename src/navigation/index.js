@@ -10,4 +10,5 @@ export const navigation = [
   { path: "/fixed-footer", name: "fixed footer animation" },
   { path: "/debounce", name: "debounce" },
   { path: "/autocomplete", name: "autocomplete" },
+  { path: "/cursor-move", name: "cursor move" },
 ];
