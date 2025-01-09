@@ -11,4 +11,5 @@ export const navigation = [
   { path: "/debounce", name: "debounce" },
   { path: "/autocomplete", name: "autocomplete" },
   { path: "/cursor-move", name: "cursor move" },
+  { path: "/otp", name: "otp" },
 ];
