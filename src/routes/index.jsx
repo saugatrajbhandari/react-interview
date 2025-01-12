@@ -12,6 +12,7 @@ import Debounce from "../pages/debounce";
 import Autocomplete from "../pages/autocomplete";
 import CursorMove from "../pages/cursor-move";
 import Otp from "../pages/otp";
+import Progressbar from "../pages/progress-bar";
 
 export const routes = [
   {
@@ -47,4 +48,5 @@ export const routes = [
   { path: "/autocomplete", element: <Autocomplete /> },
   { path: "/cursor-move", element: <CursorMove /> },
   { path: "/otp", element: <Otp /> },
+  { path: "/progress-bar", element: <Progressbar /> },
 ];

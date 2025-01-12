@@ -12,4 +12,5 @@ export const navigation = [
   { path: "/autocomplete", name: "autocomplete" },
   { path: "/cursor-move", name: "cursor move" },
   { path: "/otp", name: "otp" },
+  { path: "/progress-bar", name: "progress bar" },
 ];
