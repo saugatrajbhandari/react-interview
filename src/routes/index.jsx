@@ -13,6 +13,7 @@ import Autocomplete from "../pages/autocomplete";
 import CursorMove from "../pages/cursor-move";
 import Otp from "../pages/otp";
 import Progressbar from "../pages/progress-bar";
+import HolyGrailLayout from "../pages/holy-grail-layout";
 
 export const routes = [
   {
@@ -49,4 +50,5 @@ export const routes = [
   { path: "/cursor-move", element: <CursorMove /> },
   { path: "/otp", element: <Otp /> },
   { path: "/progress-bar", element: <Progressbar /> },
+  { path: "/holy-grail-layout", element: <HolyGrailLayout /> },
 ];

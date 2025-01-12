@@ -26,8 +26,6 @@ function Progressbar() {
     return () => clearInterval(timerRef.current);
   }, []);
 
-  console.log(progress);
-
   return (
     <div className={style.wrapper}>
       <div

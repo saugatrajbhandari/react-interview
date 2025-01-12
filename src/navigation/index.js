@@ -13,4 +13,5 @@ export const navigation = [
   { path: "/cursor-move", name: "cursor move" },
   { path: "/otp", name: "otp" },
   { path: "/progress-bar", name: "progress bar" },
+  { path: "/holy-grail-layout", name: "holy grail layout" },
 ];
