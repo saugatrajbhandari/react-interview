@@ -15,7 +15,6 @@ const className = {
 };
 
 function ToastComponent(props) {
-  console.log(props);
   const { type, setToast, position = "top-right", message = "toast" } = props;
 
   return (
