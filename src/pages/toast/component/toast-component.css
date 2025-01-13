@@ -1,0 +1,40 @@
+.toaster{
+    position: fixed;
+   
+    width: 200px;
+    padding:8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    color: aliceblue;
+}
+
+
+.success{
+    background-color: rgb(60, 169, 60);
+}
+
+.warning{
+    background-color: rgb(181, 181, 9);
+}
+
+.error{
+    background-color: rgb(238, 94, 94);
+}
+
+.top-right{
+    top: 10px;
+    right: 0;
+}
+
+.top-left{
+    top: 10px;
+    left: 0;
+}
+
+.top-center{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}

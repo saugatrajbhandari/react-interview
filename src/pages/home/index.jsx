@@ -5,7 +5,7 @@ import { navigation } from "../../navigation";
 function Home() {
   return (
     <div>
-      <h1 className={style.title}>React Interview</h1>
+      <h1 className={style.title}>React Machine Coding</h1>
 
       <div className={style.container}>
         {navigation.map((item) => (

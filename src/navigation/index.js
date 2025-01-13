@@ -15,4 +15,5 @@ export const navigation = [
   { path: "/progress-bar", name: "progress bar" },
   { path: "/holy-grail-layout", name: "holy grail layout" },
   { path: "/tabs", name: "tabs(compound pattern)" },
+  { path: "/toast", name: "toast" },
 ];
