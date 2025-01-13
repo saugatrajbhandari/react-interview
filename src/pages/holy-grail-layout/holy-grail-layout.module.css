@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    grid: auto 1fr auto / 100px 1fr 100px;
+    height: 100vh;
+}
+
+.header{
+    background-color: blue;
+    grid-column: span 3;
+}
+
+.leftSidebar{
+    background-color: antiquewhite;
+}
+
+.main{
+    background-color: brown;
+}
+
+.rightSidebar{
+    background-color: blueviolet;
+}
+
+.footer{
+    background-color: cadetblue;
+    grid-column: span 3;
+
+}
+
+@media (max-width:768px) {
+    .container{
+        grid: repeat(5, 1fr)  / auto;
+    }
+    .header{
+        grid-column: span 1;
+    }
+
+    .footer{
+        grid-column: span 1;
+    }
+}
