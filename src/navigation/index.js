@@ -14,4 +14,5 @@ export const navigation = [
   { path: "/otp", name: "otp" },
   { path: "/progress-bar", name: "progress bar" },
   { path: "/holy-grail-layout", name: "holy grail layout" },
+  { path: "/tabs", name: "tabs(compound pattern)" },
 ];

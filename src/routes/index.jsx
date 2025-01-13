@@ -14,6 +14,7 @@ import CursorMove from "../pages/cursor-move";
 import Otp from "../pages/otp";
 import Progressbar from "../pages/progress-bar";
 import HolyGrailLayout from "../pages/holy-grail-layout";
+import TabsPage from "../pages/tabs";
 
 export const routes = [
   {
@@ -51,4 +52,5 @@ export const routes = [
   { path: "/otp", element: <Otp /> },
   { path: "/progress-bar", element: <Progressbar /> },
   { path: "/holy-grail-layout", element: <HolyGrailLayout /> },
+  { path: "/tabs", element: <TabsPage /> },
 ];

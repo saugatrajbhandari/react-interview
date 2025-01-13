@@ -1,0 +1,24 @@
+.tab{
+    border: 1px solid black;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item{
+    background-color: blueviolet;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+.item.active{
+    background-color: brown;
+}
+
+.content-container{
+    padding: 10px;
+}
