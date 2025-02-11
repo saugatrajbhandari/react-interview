@@ -16,4 +16,6 @@ export const navigation = [
   { path: "/holy-grail-layout", name: "holy grail layout" },
   { path: "/tabs", name: "tabs(compound pattern)" },
   { path: "/toast", name: "toast" },
+  { path: "/pagination", name: "pagination" },
+  { path: "/custom-switch", name: "custom switch" },
 ];

@@ -16,6 +16,8 @@ import Progressbar from "../pages/progress-bar";
 import HolyGrailLayout from "../pages/holy-grail-layout";
 import TabsPage from "../pages/tabs";
 import Toast from "../pages/toast";
+import Pagination from "../pages/pagination";
+import CustomSwitch from "../pages/custom-switch";
 
 export const routes = [
   {
@@ -55,4 +57,6 @@ export const routes = [
   { path: "/holy-grail-layout", element: <HolyGrailLayout /> },
   { path: "/tabs", element: <TabsPage /> },
   { path: "/toast", element: <Toast /> },
+  { path: "/pagination", element: <Pagination /> },
+  { path: "/custom-switch", element: <CustomSwitch /> },
 ];
