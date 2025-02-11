@@ -18,6 +18,7 @@ import TabsPage from "../pages/tabs";
 import Toast from "../pages/toast";
 import Pagination from "../pages/pagination";
 import CustomSwitch from "../pages/custom-switch";
+import Spinner from "../pages/spinner";
 
 export const routes = [
   {
@@ -59,4 +60,5 @@ export const routes = [
   { path: "/toast", element: <Toast /> },
   { path: "/pagination", element: <Pagination /> },
   { path: "/custom-switch", element: <CustomSwitch /> },
+  { path: "/spinner", element: <Spinner /> },
 ];

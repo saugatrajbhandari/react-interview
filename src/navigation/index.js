@@ -18,4 +18,5 @@ export const navigation = [
   { path: "/toast", name: "toast" },
   { path: "/pagination", name: "pagination" },
   { path: "/custom-switch", name: "custom switch" },
+  { path: "/spinner", name: "spinner" },
 ];
