@@ -1,0 +1,25 @@
+.typehead-container{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.input{
+    outline: black;
+    width: 100%;
+}
+
+.suggestion{
+    border: 1px solid black;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.recipe{
+    padding: 10px;
+    transition: all 200ms ease;
+
+}
+
+.recipe:hover{
+    background-color: rgb(196, 196, 196);
+}

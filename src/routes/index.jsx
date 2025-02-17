@@ -19,6 +19,7 @@ import Toast from "../pages/toast";
 import Pagination from "../pages/pagination";
 import CustomSwitch from "../pages/custom-switch";
 import Spinner from "../pages/spinner";
+import TypeHeadAutoSuggestion from "../pages/typehead-autosuggestion";
 
 export const routes = [
   {
@@ -61,4 +62,5 @@ export const routes = [
   { path: "/pagination", element: <Pagination /> },
   { path: "/custom-switch", element: <CustomSwitch /> },
   { path: "/spinner", element: <Spinner /> },
+  { path: "/typehead-autosuggestion", element: <TypeHeadAutoSuggestion /> },
 ];
