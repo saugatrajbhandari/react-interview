@@ -29,7 +29,7 @@ function TypeHeadAutoSuggestion() {
   useEffect(() => {
     const timer = setTimeout(fetchProducts, 300);
 
-    return () => clearInterval(timer);
+    return () => clearTimeout(timer);
   }, [search]);
 
   return (
