@@ -20,4 +20,5 @@ export const navigation = [
   { path: "/custom-switch", name: "custom switch" },
   { path: "/spinner", name: "spinner" },
   { path: "/typehead-autosuggestion", name: "typehead autosuggestion" },
+  { path: "/accordian", name: "accordian" },
 ];

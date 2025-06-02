@@ -20,6 +20,7 @@ import Pagination from "../pages/pagination";
 import CustomSwitch from "../pages/custom-switch";
 import Spinner from "../pages/spinner";
 import TypeHeadAutoSuggestion from "../pages/typehead-autosuggestion";
+import Accordian from "../pages/accordian";
 
 export const routes = [
   {
@@ -63,4 +64,5 @@ export const routes = [
   { path: "/custom-switch", element: <CustomSwitch /> },
   { path: "/spinner", element: <Spinner /> },
   { path: "/typehead-autosuggestion", element: <TypeHeadAutoSuggestion /> },
+  { path: "/accordian", element: <Accordian /> },
 ];
