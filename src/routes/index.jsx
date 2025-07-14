@@ -21,6 +21,7 @@ import CustomSwitch from "../pages/custom-switch";
 import Spinner from "../pages/spinner";
 import TypeHeadAutoSuggestion from "../pages/typehead-autosuggestion";
 import Accordian from "../pages/accordian";
+import FileExplorer from "../pages/file-explorer";
 
 export const routes = [
   {
@@ -65,4 +66,5 @@ export const routes = [
   { path: "/spinner", element: <Spinner /> },
   { path: "/typehead-autosuggestion", element: <TypeHeadAutoSuggestion /> },
   { path: "/accordian", element: <Accordian /> },
+  { path: "/file-explorer", element: <FileExplorer /> },
 ];

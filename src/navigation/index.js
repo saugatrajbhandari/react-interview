@@ -21,4 +21,5 @@ export const navigation = [
   { path: "/spinner", name: "spinner" },
   { path: "/typehead-autosuggestion", name: "typehead autosuggestion" },
   { path: "/accordian", name: "accordian" },
+  { path: "/file-explorer", name: "file explorer" },
 ];
